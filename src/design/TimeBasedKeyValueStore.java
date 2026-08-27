@@ -8,7 +8,7 @@ public class TimeBasedKeyValueStore {
     // Map<String, TreeMap<Integer, List<String>>> timeMap;
     Map<String, TreeMap<Integer, String>> timeMap;
 
-    public TimeMap() {
+    public TimeBasedKeyValueStore() {
         timeMap = new HashMap<>();
     }
 
