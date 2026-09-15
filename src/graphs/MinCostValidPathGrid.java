@@ -40,7 +40,10 @@ public class MinCostValidPathGrid {
                 if (nr < 0 || nr >= rows || nc < 0 || nc >= cols)
                     continue;
 
-                int n_cost = dist[r][c] + (i == move ? 0 : 1);
+                // int n_cost = dist[r][c] + (i == move ? 0 : 1);
+                int n_cost = cost + (i == move ? 0 : 1);
+
+                // if(grid[nr][nc] == )
 
                 if (n_cost < dist[nr][nc]) {
                     dist[nr][nc] = n_cost;

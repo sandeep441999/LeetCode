@@ -13,7 +13,7 @@ public class Subsets {
 
     public void dfs(int[] nums, int start, List<Integer> cur) {
 
-        res.add(new ArrayList(cur));
+        res.add(new ArrayList<>(cur));
 
         for (int i = start; i < nums.length; i++) {
             cur.add(nums[i]);
